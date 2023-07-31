@@ -11,11 +11,11 @@ const Navigation = () => (
       </li>
       <li>
         <ul className="nav">
-          <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active-link' : '')}>Rockets</NavLink></li>
-          <li><NavLink to="/missions" className={({ isActive }) => (isActive ? 'active-link' : '')}>Missions</NavLink></li>
-          <li><NavLink to="/dragons" className={({ isActive }) => (isActive ? 'active-link' : '')}>Dragons</NavLink></li>
+          <li><NavLink to="/">Rockets</NavLink></li>
+          <li><NavLink to="/missions">Missions</NavLink></li>
+          <li><NavLink to="/dragons">Dragons</NavLink></li>
           <span className="divider">|</span>
-          <li><NavLink to="/profile" className={({ isActive }) => (isActive ? 'active-link' : '')}>My Profile</NavLink></li>
+          <li><NavLink to="/profile">My Profile</NavLink></li>
         </ul>
       </li>
 
