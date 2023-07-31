@@ -1,4 +1,8 @@
-li{
+a {
+  text-decoration: none;
+}
+
+li {
   list-style: none;
 }
 
@@ -16,17 +20,22 @@ ul.menu {
   justify-content: space-around;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
 }
 
-ul.nav li {
+ul.nav li,
+.nav-item {
   padding-left: 40px;
-  color: #017BFE;
+  color: #017bfe;
 }
 
 li.divider {
   font-size: 26px;
   font-weight: lighter;
+}
+
+.active {
+  text-decoration: underline;
 }
