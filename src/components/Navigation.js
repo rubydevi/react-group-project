@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../images/planet.png';
 
 const Navigation = () => (
@@ -13,7 +14,9 @@ const Navigation = () => (
           <li>Missions</li>
           <li>Dragons</li>
           <li className="divider">|</li>
-          <li>My Profile</li>
+          <li>
+            <NavLink className="nav-item" to="/profile" activeclassname="active">My Profile</NavLink>
+          </li>
         </ul>
       </li>
 
