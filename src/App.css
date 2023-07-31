@@ -36,6 +36,10 @@ ul.nav li {
   padding-left: 24px;
 }
 
+a.active {
+  border-bottom: 1px solid;
+}
+
 ul.nav li a {
   text-decoration: none;
   color: #017BFE;
