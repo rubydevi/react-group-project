@@ -32,7 +32,23 @@ const RocketsComponent = () => {
       <div>
         <ul>
           {rockets.map((rocket) => (
-            <li key={rocket.id}>{rocket.name}</li>
+            <li key={rocket.id}>
+              <strong>Name:</strong>
+              {' '}
+              {rocket.name}
+              <br />
+              <strong>Type:</strong>
+              {' '}
+              {rocket.type}
+              <br />
+              <strong>ID:</strong>
+              {' '}
+              {rocket.id}
+              <br />
+              {rocket.flickr_images.length > 0 && (
+                <img src={rocket.flickr_images[0]} alt={`Rocket ${rocket.name}`} />
+              )}
+            </li>
           ))}
         </ul>
       </div>
