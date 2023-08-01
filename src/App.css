@@ -1,3 +1,9 @@
+@import url('https: //fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -8,16 +14,21 @@ li {
 
 li.logo {
   display: flex;
+  align-items: center;
 }
 
 li.logo img {
-  width: 60px;
+  width: 70px;
 }
 
 ul.menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  border-bottom: 1px solid #bdbdbd;
 }
 
 .nav {
@@ -25,15 +36,34 @@ ul.menu {
   align-items: center;
 }
 
-ul.nav li,
+ul.nav li {
+  padding-left: 24px;
+}
+
+a.active {
+  border-bottom: 1px solid;
+}
+
+ul.nav li a {
+  text-decoration: none;
+  color: #017bfe;
+}
+
 .nav-item {
   padding-left: 40px;
   color: #017bfe;
 }
 
-li.divider {
-  font-size: 26px;
+.divider {
+  font-size: 17px;
   font-weight: lighter;
+  padding-left: 24px;
+}
+
+h3.logo-text {
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 25px;
 }
 
 .active {
