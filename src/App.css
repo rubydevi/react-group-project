@@ -1,10 +1,14 @@
 @import url('https: //fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500&display=swap');
 
-body{
+body {
   font-family: "Lato", sans-serif;
 }
 
-li{
+a {
+  text-decoration: none;
+}
+
+li {
   list-style: none;
 }
 
@@ -27,7 +31,7 @@ ul.menu {
   border-bottom: 1px solid #bdbdbd;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
 }
@@ -42,7 +46,12 @@ a.active {
 
 ul.nav li a {
   text-decoration: none;
-  color: #017BFE;
+  color: #017bfe;
+}
+
+.nav-item {
+  padding-left: 40px;
+  color: #017bfe;
 }
 
 .divider {
@@ -55,4 +64,8 @@ h3.logo-text {
   padding-left: 20px;
   font-weight: 400;
   font-size: 25px;
+}
+
+.active {
+  text-decoration: underline;
 }
