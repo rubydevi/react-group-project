@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/Table';
 import { getMission } from '../Redux/Missions/missions';
@@ -28,7 +29,9 @@ const MissionsComponent = () => {
             <tr key={mission.mission_id}>
               <td>{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td>{mission.description}</td>
+              <td>
+                {mission.status ? (<Button>Active Member</Button>) : (<Button variant="secondary">NOT A MEMBER</Button>)}
+              </td>
             </tr>
           ))}
         </tbody>
