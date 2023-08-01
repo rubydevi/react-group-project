@@ -4,7 +4,11 @@ body{
   font-family: "Lato", sans-serif;
 }
 
-li{
+a {
+  text-decoration: none;
+}
+
+li {
   list-style: none;
 }
 
@@ -27,7 +31,7 @@ ul.menu {
   border-bottom: 1px solid #bdbdbd;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
 }
@@ -41,6 +45,11 @@ ul.nav li a {
   color: #017BFE;
 }
 
+.nav-item {
+  padding-left: 40px;
+  color: #017bfe;
+}
+
 .divider {
   font-size: 17px;
   font-weight: lighter;
@@ -51,4 +60,8 @@ h3.logo-text {
   padding-left: 20px;
   font-weight: 400;
   font-size: 25px;
+}
+
+.active {
+  text-decoration: underline;
 }
