@@ -1,9 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
-const ProfileComponent = () => {
-  return (
+const ProfileComponent = () => (
   <Container>
     <Row>
       <table>
@@ -17,10 +15,7 @@ const ProfileComponent = () => {
         </tr>
       </table>
     </Row>
-    
-  </Container>
-  )
-  }
-  ;
 
+  </Container>
+);
 export default ProfileComponent;
