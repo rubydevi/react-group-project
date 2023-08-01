@@ -21,7 +21,7 @@ const MissionsComponent = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th>Button</th>
+            <th>.</th>
           </tr>
         </thead>
         <tbody>
