@@ -1,13 +1,18 @@
 import Container from 'react-bootstrap/Container';
 
-const ProfileComponent = () => {
-
-  return (
-    <>
-      <h3>ActiveMission here</h3>
-      <h3>ActiveRockets here</h3>
-    </>
-  )
-  };
+const ProfileComponent = () => (
+  <Container>
+    <table>
+      <tr>
+        <th>My Missions</th>
+        <th>My Rockets</th>
+      </tr>
+      <tr>
+        <td>Telstar</td>
+        <td>Falcon 9</td>
+      </tr>
+    </table>
+  </Container>
+);
 
 export default ProfileComponent;
