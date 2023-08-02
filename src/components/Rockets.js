@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRockets } from '../Redux/Rockets/rocketsSlice';
+import Rocket from './Rocket';
 
 const RocketsComponent = () => {
   const dispatch = useDispatch();
@@ -28,30 +29,11 @@ const RocketsComponent = () => {
 
   return (
     <Container>
-      <h1>Rockets Page</h1>
-      <div>
-        <ul>
-          {rockets.map((rocket) => (
-            <li key={rocket.id}>
-              <strong>Name:</strong>
-              {' '}
-              {rocket.name}
-              <br />
-              <strong>Type:</strong>
-              {' '}
-              {rocket.type}
-              <br />
-              <strong>ID:</strong>
-              {' '}
-              {rocket.id}
-              <br />
-              {rocket.flickr_images.length > 0 && (
-                <img src={rocket.flickr_images[0]} alt={`Rocket ${rocket.name}`} />
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="rockets">
+        {rockets.map((rocket) => (
+          <Rocket key={rocket.id} rocket={rocket} />
+        ))}
+      </ul>
     </Container>
   );
 };
