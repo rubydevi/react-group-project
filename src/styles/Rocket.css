@@ -1,0 +1,30 @@
+.rocket {
+  display: flex;
+  column-gap: 20px;
+}
+
+.rocket-image {
+  width: 27%;
+}
+
+.rocket-description {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.reserve-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.reserve-button:active {
+  background-color: #0069da;
+}
+
+.reserve-button:hover {
+  background-color: #0071eb;
+}
