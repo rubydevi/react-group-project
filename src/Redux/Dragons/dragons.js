@@ -11,4 +11,4 @@ const dragonSlice = createSlice({
   initialState,
 });
 
-console.log(dragonSlice)
+console.log(dragonSlice);
