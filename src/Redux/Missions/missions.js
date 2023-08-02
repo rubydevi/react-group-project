@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
-  misions: [],
+  missions: [],
   status: 'idle',
 };
 
@@ -20,9 +20,18 @@ export const getMission = createAsyncThunk('get/missions', async (thunkAPI) => {
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
+  reducers: {
+    joinMission(state, action) {
+      const newData = state.missions.map((mission) => {
+        if (mission.mission_id !== action.payload) return mission;
+        return { ...mission, status: true };
+      });
+      return newData;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getMission.fulfilled, (state, action) => {
-      state.misions = action.payload;
+      state.missions = action.payload;
       state.status = 'success';
     });
     builder.addCase(getMission.rejected, (state) => {
@@ -31,4 +40,5 @@ const missionSlice = createSlice({
   },
 });
 
+export const { joinMission } = missionSlice.actions;
 export default missionSlice.reducer;
