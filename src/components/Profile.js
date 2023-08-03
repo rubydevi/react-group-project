@@ -8,22 +8,26 @@ const ProfileComponent = () => (
   <Container>
     <Row>
       <table>
-        <tr>
-          <th>My Missions</th>
-          <th>My Rockets</th>
-          <th>My Dragons</th>
-        </tr>
-        <tr>
-          <td>
-            <JoinedMissions />
-          </td>
-          <td>
-            <ReservedRockets />
-          </td>
-          <td>
-            <ReservedDragons />
-          </td>
-        </tr>
+        <thead>
+          <tr>
+            <th>My Missions</th>
+            <th>My Rockets</th>
+            <th>My Dragons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <JoinedMissions />
+            </td>
+            <td>
+              <ReservedRockets />
+            </td>
+            <td>
+              <ReservedDragons />
+            </td>
+          </tr>
+        </tbody>
       </table>
     </Row>
 
