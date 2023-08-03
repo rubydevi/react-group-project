@@ -83,3 +83,13 @@ button.btn.btn-outline-secondary {
 td {
   vertical-align: middle;
 }
+
+button.btn.btn-success {
+  width: 115px;
+  font-size: 12px;
+}
+
+button.btn.btn-outline-danger {
+  width: 115px;
+  font-size: 13px;
+}
