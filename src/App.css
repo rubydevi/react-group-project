@@ -93,3 +93,35 @@ button.btn.btn-outline-danger {
   width: 115px;
   font-size: 13px;
 }
+<<<<<<< HEAD
+=======
+
+.rockets {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  border-top-color: #307bbe;
+  animation: spin 0.6s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+>>>>>>> 1000cd66eaa19aff2d41b66a0a80bf90772d4cac
