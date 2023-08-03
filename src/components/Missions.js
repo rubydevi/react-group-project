@@ -14,7 +14,7 @@ const MissionsComponent = () => {
     if (missions.length === 0) {
       dispatch(getMission());
     }
-  }, [dispatch]);
+  }, [dispatch, missions.length]);
 
   const join = (id) => {
     dispatch(joinMission(id));
