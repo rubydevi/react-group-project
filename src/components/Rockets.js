@@ -15,7 +15,13 @@ const RocketsComponent = () => {
   }, [dispatch]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <Container>
+        <ul className="load">
+          <div className="loader" />
+        </ul>
+      </Container>
+    );
   }
 
   if (error) {
