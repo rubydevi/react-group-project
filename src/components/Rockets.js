@@ -31,7 +31,7 @@ const RocketsComponent = () => {
     <Container>
       <ul className="rockets">
         {rockets.map((rocket) => (
-          <Rocket key={rocket.id} rocket={rocket} />
+          <Rocket key={rocket.id} rocket={rocket} reserved={rocket.reserved} />
         ))}
       </ul>
     </Container>
