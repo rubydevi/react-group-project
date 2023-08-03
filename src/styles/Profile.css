@@ -5,23 +5,9 @@
 
 .profile-table {
   border-collapse: collapse;
-  width: 30%; /* Adjust the width as needed */
+  width: 30%;
 }
 
 .profile-table th {
   padding: 10px;
-}
-
-.profile-row {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.profile-table tbody tr:nth-child(odd) {
-  background-color: #f8f8f8;
-}
-
-.profile-table tbody tr:hover {
-  background-color: #f0f0f0;
 }
