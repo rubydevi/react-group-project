@@ -70,6 +70,30 @@ h3.logo-text {
   text-decoration: underline;
 }
 
+button.btn.btn-secondary {
+  width: 115px;
+  font-size: 11px;
+}
+
+button.btn.btn-outline-secondary {
+  width: 111px;
+  font-size: 13px;
+}
+
+td {
+  vertical-align: middle;
+}
+
+button.btn.btn-success {
+  width: 115px;
+  font-size: 12px;
+}
+
+button.btn.btn-outline-danger {
+  width: 115px;
+  font-size: 13px;
+}
+
 .rockets {
   display: flex;
   flex-direction: column;

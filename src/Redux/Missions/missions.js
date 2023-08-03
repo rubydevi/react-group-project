@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
-  misions: [],
+  missions: [],
   status: 'idle',
 };
 
@@ -10,7 +10,7 @@ export const getMission = createAsyncThunk('get/missions', async (thunkAPI) => {
   try {
     const response = await fetch('https://api.spacexdata.com/v3/missions');
     const data = await response.json();
-    const newData = data.map((mission) => ({ ...mission, status: false }));
+    const newData = data.map((mission) => ({ ...mission, reserved: false }));
     return newData;
   } catch (error) {
     return thunkAPI.rejectWithValue(`There was an error: ${error}`);
@@ -20,9 +20,21 @@ export const getMission = createAsyncThunk('get/missions', async (thunkAPI) => {
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
+  reducers: {
+    joinMission: (state, action) => {
+      const missionId = action.payload;
+      state.missions = state.missions.map((mission) => (
+        mission.mission_id !== missionId ? mission : { ...mission, reserved: true }));
+    },
+    leaveMission: (state, action) => {
+      const missionId = action.payload;
+      state.missions = state.missions.map((mission) => (
+        mission.mission_id !== missionId ? mission : { ...mission, reserved: false }));
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getMission.fulfilled, (state, action) => {
-      state.misions = action.payload;
+      state.missions = action.payload;
       state.status = 'success';
     });
     builder.addCase(getMission.rejected, (state) => {
@@ -31,4 +43,5 @@ const missionSlice = createSlice({
   },
 });
 
+export const { joinMission, leaveMission } = missionSlice.actions;
 export default missionSlice.reducer;
