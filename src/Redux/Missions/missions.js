@@ -10,7 +10,7 @@ export const getMission = createAsyncThunk('get/missions', async (thunkAPI) => {
   try {
     const response = await fetch('https://api.spacexdata.com/v3/missions');
     const data = await response.json();
-    const newData = data.map((mission) => ({ ...mission, status: false }));
+    const newData = data.map((mission) => ({ ...mission, reserved: false }));
     return newData;
   } catch (error) {
     return thunkAPI.rejectWithValue(`There was an error: ${error}`);
@@ -21,12 +21,15 @@ const missionSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    joinMission(state, action) {
-      const newData = state.missions.map((mission) => {
-        if (mission.mission_id !== action.payload) return mission;
-        return { ...mission, status: true };
-      });
-      return newData;
+    joinMission: (state, action) => {
+      const missionId = action.payload;
+      state.missions = state.missions.map((mission) => (
+        mission.mission_id !== missionId ? mission : { ...mission, reserved: true }));
+    },
+    leaveMission: (state, action) => {
+      const missionId = action.payload;
+      state.missions = state.missions.map((mission) => (
+        mission.mission_id !== missionId ? mission : { ...mission, reserved: false }));
     },
   },
   extraReducers: (builder) => {
@@ -40,5 +43,5 @@ const missionSlice = createSlice({
   },
 });
 
-export const { joinMission } = missionSlice.actions;
+export const { joinMission, leaveMission } = missionSlice.actions;
 export default missionSlice.reducer;
