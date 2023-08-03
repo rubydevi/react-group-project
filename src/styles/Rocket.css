@@ -12,13 +12,25 @@
   font-weight: 500;
 }
 
-.reserve-button {
-  background-color: #007bff;
-  color: #fff;
+button {  
   padding: 8px 10px;
   border-radius: 5px;
   border: none;
   outline: none;
+}
+
+.reserved-badge {
+  float: left;
+  padding: 1px 5px;
+  background-color: #18a2b8;
+  color: #f7fcfc;
+  border-radius: 10%;
+  margin-right: 5px;
+}
+
+.reserve-button {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .reserve-button:active {
@@ -27,4 +39,10 @@
 
 .reserve-button:hover {
   background-color: #0071eb;
+}
+
+.cancel-button {
+  border: 1px solid #6f777f;
+  color: #6d757d;
+  background-color: #fff;
 }
