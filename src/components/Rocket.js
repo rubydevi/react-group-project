@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../Redux/Rockets/rocketsSlice';
+import { reserveRocket, unreserveRocket } from '../Redux/Rockets/rocketsSlice';
 import '../styles/Rocket.css';
 
 const Rocket = ({ rocket }) => {
@@ -11,6 +11,10 @@ const Rocket = ({ rocket }) => {
     dispatch(reserveRocket(rocket.id));
   };
 
+  const handleCancelRocket = () => {
+    dispatch(unreserveRocket(rocket.id));
+  };
+
   return (
     <li className="rocket" key={rocket.id}>
       {rocket.flickr_images.length > 0 && (
@@ -18,13 +22,18 @@ const Rocket = ({ rocket }) => {
       )}
       <div className="rocket-details">
         <h3 className="rocket-title">{rocket.name}</h3>
-        {/* Show badge when reserved */}
-        {rocket.reserved && <span className="reserved-badge">Reserved</span>}
-        <p className="rocket-description">
-          {rocket.description}
-        </p>
+        <div>
+          {/* Show badge when reserved */}
+          {rocket.reserved && <span className="reserved-badge">Reserved</span>}
+          <p className="rocket-description">
+            {rocket.description}
+          </p>
+        </div>
         <button className="reserve-button" type="submit" onClick={handleReserveRocket}>
           Reserve Rocket
+        </button>
+        <button className="cancel-button" type="submit" onClick={handleCancelRocket}>
+          Cancel Reservation
         </button>
       </div>
     </li>
