@@ -7,11 +7,13 @@ import { getMission, joinMission, leaveMission } from '../Redux/Missions/mission
 
 const MissionsComponent = () => {
   const missions = useSelector((state) => state.missions.missions);
-  console.log(missions);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getMission());
+    if (missions.length === 0) {
+      dispatch(getMission());
+    }
   }, [dispatch]);
 
   const join = (id) => {
