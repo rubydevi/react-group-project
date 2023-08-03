@@ -1,7 +1,43 @@
+import { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
+import { useDispatch, useSelector } from 'react-redux';
+import Table from 'react-bootstrap/Table';
+import { getMission } from '../Redux/Missions/missions';
 
-const MissionsComponent = () => (
-  <Container><h1>Mission Page</h1></Container>
-);
+const MissionsComponent = () => {
+  const missions = useSelector((state) => state.missions.misions);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMission());
+  }, [dispatch]);
+
+  return (
+    <Container>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <tr key={mission.mission_id}>
+              <td>{mission.mission_name}</td>
+              <td>{mission.description}</td>
+              <td>
+                {mission.status ? (<Button>Active Member</Button>) : (<Button variant="secondary">NOT A MEMBER</Button>)}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+    </Container>
+  );
+};
 
 export default MissionsComponent;
