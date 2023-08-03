@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RocketsComponent renders correctly 1`] = `
+<div
+  className="container"
+>
+  <ul
+    className="rockets"
+  >
+    <li
+      className="rocket"
+    >
+      <img
+        alt="Rocket Falcon 1"
+        className="rocket-image"
+        src="https://imgur.com/DaCfMsj.jpg"
+      />
+      <div
+        className="rocket-details"
+      >
+        <h3
+          className="rocket-title"
+        >
+          Falcon 1
+        </h3>
+        <div>
+          <p
+            className="rocket-description"
+          >
+            Description 1
+          </p>
+        </div>
+        <button
+          className="reserve-button"
+          onClick={[Function]}
+          type="submit"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </li>
+    <li
+      className="rocket"
+    >
+      <img
+        alt="Rocket Falcon 9"
+        className="rocket-image"
+        src="https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg"
+      />
+      <div
+        className="rocket-details"
+      >
+        <h3
+          className="rocket-title"
+        >
+          Falcon 9
+        </h3>
+        <div>
+          <p
+            className="rocket-description"
+          >
+            Description 2
+          </p>
+        </div>
+        <button
+          className="reserve-button"
+          onClick={[Function]}
+          type="submit"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

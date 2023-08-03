@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReservedRockets component renders correctly with no reserved rockets 1`] = `
+<div>
+  You have no reserved rockets.
+</div>
+`;
+
+exports[`ReservedRockets component renders correctly with reserved rockets 1`] = `
+<ul
+  className="reserved-rockets"
+>
+  <li
+    className="reserved-rocket"
+  >
+    Falcon 1
+  </li>
+  <li
+    className="reserved-rocket"
+  >
+    Falcon 9
+  </li>
+</ul>
+`;
