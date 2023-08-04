@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileComponent renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="profile-table-container"
+  >
+    <table
+      className="profile-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Missions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <JoinedMissions />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      className="profile-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Rockets
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ReservedRockets />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      className="profile-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Dragons
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ReservedDragons />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

@@ -11,6 +11,7 @@ test('Rocket component renders correctly', () => {
   const mockRocket = {
     id: '5e9d0d95eda69955f709d1eb',
     name: 'Falcon 1',
+    type: 'rocket',
     description: 'Description 1',
     flickr_images: ['https://imgur.com/DaCfMsj.jpg'],
     reserved: false,
