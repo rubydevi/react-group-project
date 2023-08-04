@@ -15,14 +15,18 @@ test('RocketsComponent renders correctly', () => {
         {
           id: '5e9d0d95eda69955f709d1eb',
           name: 'Falcon 1',
+          type: 'rocket',
           description: 'Description 1',
           flickr_images: ['https://imgur.com/DaCfMsj.jpg'],
+          reserved: false,
         },
         {
           id: '5e9d0d95eda69973a809d1ec',
           name: 'Falcon 9',
+          type: 'rocket',
           description: 'Description 2',
           flickr_images: ['https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg'],
+          reserved: false,
         },
       ],
       loading: false,
