@@ -61,7 +61,7 @@ describe('Testing Mission Components', () => {
         join={join}
       />,
     );
-    const table = screen.getAllByRole('button');
-    expect(table).toHaveLength(6);
+    const buttons = screen.getAllByRole('button');
+    expect(buttons).toHaveLength(6);
   });
 });
