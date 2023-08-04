@@ -1,0 +1,13 @@
+.profile-table-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+.profile-table th {
+  padding: 10px;
+}

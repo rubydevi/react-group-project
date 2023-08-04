@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReservedDragons component renders correctly with no reserved dragons 1`] = `
+<div
+  className="mt-4 container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h5>
+        Dragons
+         
+        <span
+          className="badge bg-info"
+        >
+          No dragon reserved
+        </span>
+      </h5>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ReservedDragons component renders correctly with reserved dragons 1`] = `
+<div
+  className="mt-4 container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="list-group-item"
+          data-rr-ui-event-key={null}
+          onClick={[Function]}
+        >
+          Dragon 1
+        </div>
+        <div
+          className="list-group-item"
+          data-rr-ui-event-key={null}
+          onClick={[Function]}
+        >
+          Dragon 2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

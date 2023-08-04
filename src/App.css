@@ -1,37 +1,122 @@
-.App {
-  text-align: center;
+@import url('https: //fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li.logo {
+  display: flex;
+  align-items: center;
+}
+
+li.logo img {
+  width: 70px;
+}
+
+ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+ul.nav li {
+  padding-left: 24px;
+}
+
+a.active {
+  border-bottom: 1px solid;
+}
+
+ul.nav li a {
+  text-decoration: none;
+  color: #017bfe;
+}
+
+.nav-item {
+  padding-left: 40px;
+  color: #017bfe;
+}
+
+.divider {
+  font-size: 17px;
+  font-weight: lighter;
+  padding-left: 24px;
+}
+
+h3.logo-text {
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+button.btn.btn-secondary {
+  width: 115px;
+  font-size: 11px;
+}
+
+button.btn.btn-outline-secondary {
+  width: 111px;
+  font-size: 13px;
+}
+
+td {
+  vertical-align: middle;
+}
+
+button.btn.btn-success {
+  width: 115px;
+  font-size: 12px;
+}
+
+button.btn.btn-outline-danger {
+  width: 115px;
+  font-size: 13px;
+}
+
+.rockets {
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
+}
+
+.load {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  border-top-color: #307bbe;
+  animation: spin 0.6s infinite linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes spin {
   to {
     transform: rotate(360deg);
   }
