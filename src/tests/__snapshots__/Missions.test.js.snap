@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission Components should render the mission component 1`] = `
+<table
+  className="table table-striped table-bordered table-hover"
+>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+        .
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Thaicom
+      </td>
+      <td>
+        Thaicom is the name of a series of communications satellites operated from Thailand, and also the name of Thaicom Public Company Limited, which is the company that owns and operates the Thaicom satellite fleet and other telecommunication businesses in Thailand and throughout the Asia-Pacific region. The satellite projects were named Thaicom by the King of Thailand, His Majesty the King Bhumibol Adulyadej, as a symbol of the linkage between Thailand and modern communications technology.
+      </td>
+      <td>
+        <button
+          className="btn btn-secondary"
+          disabled={false}
+          type="button"
+        >
+          NOT A MEMBER
+        </button>
+      </td>
+      <td>
+        <button
+          className="btn btn-outline-secondary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Thaicom
+      </td>
+      <td>
+        Thaicom is the name of a series of communications satellites operated from Thailand, and also the name of Thaicom Public Company Limited, which is the company that owns and operates the Thaicom satellite fleet and other telecommunication businesses in Thailand and throughout the Asia-Pacific region. The satellite projects were named Thaicom by the King of Thailand, His Majesty the King Bhumibol Adulyadej, as a symbol of the linkage between Thailand and modern communications technology.
+      </td>
+      <td>
+        <button
+          className="btn btn-secondary"
+          disabled={false}
+          type="button"
+        >
+          NOT A MEMBER
+        </button>
+      </td>
+      <td>
+        <button
+          className="btn btn-outline-secondary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Thaicom
+      </td>
+      <td>
+        Thaicom is the name of a series of communications satellites operated from Thailand, and also the name of Thaicom Public Company Limited, which is the company that owns and operates the Thaicom satellite fleet and other telecommunication businesses in Thailand and throughout the Asia-Pacific region. The satellite projects were named Thaicom by the King of Thailand, His Majesty the King Bhumibol Adulyadej, as a symbol of the linkage between Thailand and modern communications technology.
+      </td>
+      <td>
+        <button
+          className="btn btn-secondary"
+          disabled={false}
+          type="button"
+        >
+          NOT A MEMBER
+        </button>
+      </td>
+      <td>
+        <button
+          className="btn btn-outline-secondary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
