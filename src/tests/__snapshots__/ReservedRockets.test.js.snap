@@ -7,18 +7,23 @@ exports[`ReservedRockets component renders correctly with no reserved rockets 1`
 `;
 
 exports[`ReservedRockets component renders correctly with reserved rockets 1`] = `
-<ul
-  className="reserved-rockets"
+<div
+  className="list-group"
+  onKeyDown={[Function]}
 >
-  <li
-    className="reserved-rocket"
+  <div
+    className="list-group-item"
+    data-rr-ui-event-key={null}
+    onClick={[Function]}
   >
     Falcon 1
-  </li>
-  <li
-    className="reserved-rocket"
+  </div>
+  <div
+    className="list-group-item"
+    data-rr-ui-event-key={null}
+    onClick={[Function]}
   >
     Falcon 9
-  </li>
-</ul>
+  </div>
+</div>
 `;
