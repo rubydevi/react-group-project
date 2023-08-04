@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DragonsPage Component renders correctly 1`] = `
+<section
+  className="dragons"
+>
+  <div
+    className="dragon"
+  >
+    <div
+      className="dragonImg"
+    >
+      <img
+        alt="Dragon 1"
+        src="url1"
+      />
+    </div>
+    <div
+      className="dragonInfo"
+    >
+      <h2>
+        Dragon 1
+      </h2>
+      <p>
+        Description for Dragon 1
+      </p>
+      <button
+        className="reserve"
+        onClick={[Function]}
+        type="button"
+      >
+        Reserve Dragon
+      </button>
+    </div>
+  </div>
+  <div
+    className="dragon"
+  >
+    <div
+      className="dragonImg"
+    >
+      <img
+        alt="Dragon 2"
+        src="url3"
+      />
+    </div>
+    <div
+      className="dragonInfo"
+    >
+      <h2>
+        Dragon 2
+      </h2>
+      <p>
+        <span
+          className="reservedText"
+        >
+          Reserved
+        </span>
+        Description for Dragon 2
+      </p>
+      <button
+        className="cancel"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel Reservation
+      </button>
+    </div>
+  </div>
+</section>
+`;
